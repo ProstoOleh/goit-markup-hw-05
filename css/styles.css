@@ -18,6 +18,7 @@
     --second-icon-color: #8e8f99;
     --background-color-icon: #4D5AE5;
     --label-text: #8e8f99;
+    --check-link-color: #4D5AE5;
 }
 
 body {
@@ -739,6 +740,8 @@ img {
     fill: #ffffff;
 }
 
+/* Modal form */
+
 .modal-title {
     font-weight: 500;
     font-size: 16px;
@@ -749,11 +752,7 @@ img {
     margin-bottom: 16px;
 }
 
-.modal-form {
-
-}
-
-.form-container {
+.label-container {
     margin-bottom: 8px;
 }
 
@@ -764,6 +763,7 @@ img {
     letter-spacing: 0.04em;
     color: var(--label-text);
     margin-bottom: 4px;
+    margin-top: 8px;
 }
 
 .input-container {
@@ -779,15 +779,9 @@ img {
     padding-left: 38px;
     outline: transparent;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    margin-bottom: 8px;
 }
 
-.modal-input:focus {
-    border-color: #4D5AE5;
-    fill: #4D5AE5;
-}
-
-.form-icon {
+.input-icon {
     position: absolute;
     left: 16px;
     top: 50%;
@@ -795,8 +789,12 @@ img {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
- .modal-input:focus {
-    fill: #4D5AE5;
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
+
+.modal-input:focus + .input-icon {
+    fill: #4D5AE5;;
 }
 
 .text-area {
@@ -823,7 +821,7 @@ img {
     margin-bottom: 24px;
 }
 
-.checkbox-input {
+.input-checkbox {
 
 }
 
@@ -832,7 +830,13 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--label-text);
+    display: flex;
+    align-items: center;
+}
 
+.check-link{
+    color: var(--check-link-color);
+    text-decoration: underline;
 }
 
 .checkbox-span {
@@ -845,4 +849,39 @@ img {
     align-items: center;
     justify-content: center;
     fill: transparent;
+    margin-right: 8px;
+    cursor: pointer;
+    
+}
+
+.check-icon {
+    fill: #F4F4FD;;
+}
+
+.input-checkbox:checked + .checkbox-label > .checkbox-span {
+    background-color: #404BBF;
+    border: none;
+}
+
+.bttn-send {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.50;
+    letter-spacing: 0.04em;
+    min-width: 169px;
+    height: 56px;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border-radius: 4px;
+    border: none;
+    margin: 0 auto;
+    color: #FFFFFF;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.bttn-send:is(:hover, :focus) {
+    background: #404BBF;
+    border-radius: 4px;
 }
