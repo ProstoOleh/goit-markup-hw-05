@@ -815,7 +815,7 @@ img {
 }
 
 .label-container {
-    margin-bottom: 16px;
+    margin-bottom: 8px;
 }
 
 .form-label {
@@ -830,7 +830,6 @@ img {
 
 .input-container {
     position: relative;
-    margin-bottom: 8px;
 }
 
 .modal-input {
