@@ -912,7 +912,6 @@ img {
     fill: transparent;
     margin-right: 8px;
     cursor: pointer; 
-    fill: var(--icon-color);
 }
 
 .input-checkbox:checked + .checkbox-label > .checkbox-span {
