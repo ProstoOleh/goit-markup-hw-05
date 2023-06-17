@@ -891,8 +891,7 @@ img {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: var(--label-text);
-    display: flex;
-    align-items: center;
+    
 }
 
 .check-link{
