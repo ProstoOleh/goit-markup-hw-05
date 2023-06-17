@@ -899,7 +899,7 @@ img {
     text-decoration: underline;
 }
 
-.checkbox-span {
+.checkbox-label span {
     display: inline-flex;
     width: 16px;
     height: 16px;
